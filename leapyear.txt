@@ -1,0 +1,24 @@
+#display leap years between a range of years
+{
+	a00 = 1500;
+	b00 = 1560;
+	while(a00 <= b00)
+	{
+		if(a00 % 100 == 0) 	#skipping century years
+		{
+			;
+		}
+		else
+		{
+			if(a00 % 4 == 0)
+			{
+				display a00;
+			}
+			else
+			{
+				;
+			}
+		}
+		a00 = a00 + 1;
+	}
+}
